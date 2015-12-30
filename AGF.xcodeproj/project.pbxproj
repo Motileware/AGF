@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F5FFE8E1C33D68C00AD547E /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FFE8B1C33D68C00AD547E /* Enum.swift */; };
+		6F5FFE8F1C33D68C00AD547E /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F5FFE8C1C33D68C00AD547E /* FontAwesome.otf */; };
+		6F5FFE901C33D68C00AD547E /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FFE8D1C33D68C00AD547E /* FontAwesome.swift */; };
 		6FCFF6DD1C1F26F4004FEDCA /* AGF.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FCFF6DC1C1F26F4004FEDCA /* AGF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FCFF6E51C1F27E4004FEDCA /* AGF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FCFF6E41C1F27E4004FEDCA /* AGF.storyboard */; };
 		6FCFF6E71C1F2819004FEDCA /* AppGroupContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCFF6E61C1F2819004FEDCA /* AppGroupContainer.swift */; };
-		6FCFF6EA1C1F28AB004FEDCA /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FCFF6E91C1F28AB004FEDCA /* fontawesome-webfont.ttf */; };
 		6FCFF6EC1C1F293B004FEDCA /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCFF6EB1C1F293B004FEDCA /* FinderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F5FFE8B1C33D68C00AD547E /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		6F5FFE8C1C33D68C00AD547E /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		6F5FFE8D1C33D68C00AD547E /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		6FCFF6D91C1F26F4004FEDCA /* AGF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AGF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCFF6DC1C1F26F4004FEDCA /* AGF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGF.h; sourceTree = "<group>"; };
 		6FCFF6DE1C1F26F4004FEDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCFF6E41C1F27E4004FEDCA /* AGF.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AGF.storyboard; sourceTree = "<group>"; };
 		6FCFF6E61C1F2819004FEDCA /* AppGroupContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGroupContainer.swift; sourceTree = "<group>"; };
-		6FCFF6E91C1F28AB004FEDCA /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		6FCFF6EB1C1F293B004FEDCA /* FinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F5FFE8A1C33D68C00AD547E /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				6F5FFE8B1C33D68C00AD547E /* Enum.swift */,
+				6F5FFE8C1C33D68C00AD547E /* FontAwesome.otf */,
+				6F5FFE8D1C33D68C00AD547E /* FontAwesome.swift */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
 		6FCFF6CF1C1F26F4004FEDCA = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +68,12 @@
 		6FCFF6DB1C1F26F4004FEDCA /* AGF */ = {
 			isa = PBXGroup;
 			children = (
+				6F5FFE8A1C33D68C00AD547E /* FontAwesome */,
 				6FCFF6DC1C1F26F4004FEDCA /* AGF.h */,
 				6FCFF6EB1C1F293B004FEDCA /* FinderViewController.swift */,
 				6FCFF6E41C1F27E4004FEDCA /* AGF.storyboard */,
 				6FCFF6E61C1F2819004FEDCA /* AppGroupContainer.swift */,
 				6FCFF6DE1C1F26F4004FEDCA /* Info.plist */,
-				6FCFF6E91C1F28AB004FEDCA /* fontawesome-webfont.ttf */,
 			);
 			path = AGF;
 			sourceTree = "<group>";
@@ -131,8 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5FFE8F1C33D68C00AD547E /* FontAwesome.otf in Resources */,
 				6FCFF6E51C1F27E4004FEDCA /* AGF.storyboard in Resources */,
-				6FCFF6EA1C1F28AB004FEDCA /* fontawesome-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5FFE901C33D68C00AD547E /* FontAwesome.swift in Sources */,
 				6FCFF6EC1C1F293B004FEDCA /* FinderViewController.swift in Sources */,
 				6FCFF6E71C1F2819004FEDCA /* AppGroupContainer.swift in Sources */,
+				6F5FFE8E1C33D68C00AD547E /* Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

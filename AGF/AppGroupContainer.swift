@@ -37,8 +37,14 @@ class Container: NSObject {
     var count = 0
 
 
+
     // MARK: Initializers
     override init() {
+        if  let infoPlist = NSBundle.mainBundle().infoDictionary,
+            let appGroupId = infoPlist["AppGroupId"] as? String {
+                self.groupId = appGroupId
+        }
+
         let fileManager = NSFileManager.defaultManager()
         groupContainerUrl = fileManager.containerURLForSecurityApplicationGroupIdentifier(groupId)!
         documentsUrl = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask)[0]
@@ -48,8 +54,8 @@ class Container: NSObject {
         super.init()
 
         self.scanGroupContainer()
-        print("Documents: \(documentsUrl.path!)")
-        print("GroupContainer: \(groupContainerUrl.path!)")
+        print("Documents path: \(documentsUrl.path!)")
+        print("GroupContainer path: \(groupContainerUrl.path!)")
     }
 
     convenience init(groupId: String) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-let textCellIdentifier = "dirItemCell"
+let textCellIdentifier = "ItemsCell"
 
 class ItemCell: UITableViewCell {
     @IBOutlet var itemIcon: UILabel!
@@ -16,7 +16,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet var itemPath: UILabel!
 
     func fillCell(name: String, path: String, icon: String) {
-        itemIcon.font = UIFont(name: "FontAwesome", size: 30.0)
+        itemIcon.font = UIFont.fontAwesomeOfSize(30)
         itemIcon.textColor = UIColor(red: 0, green: 0.478, blue: 1.0, alpha: 1.0)
 
         itemIcon.text = icon
@@ -40,15 +40,18 @@ class FinderViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     @IBAction func export() {
+        print("Exporting app group container content...")
         container.mirrorGroupContainer()
     }
 
     @IBAction func deleteContainer() {
+        print("Deleting app group container content...")
         container.wipe()
         tableView.reloadData()
     }
 
     @IBAction func reload() {
+        print("Refreshing app group container content...")
         container.scanGroupContainer()
         tableView.reloadData()
     }
